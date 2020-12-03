@@ -1,0 +1,98 @@
+<?php
+// Utility Functions
+// include('../utils/index.php');
+
+// Loading Gamedata
+include('locations.php');
+include('roles.php');
+include('evidence.php');
+include('weapons.php');
+
+const SERVER_CONFIG = [
+	'weaponCardsUrl' => '/static/images/weaponCards',
+	'crimeSceneCardsUrl' => '/static/images/crimeSceneCards',
+];
+
+const GOOD_SIDE		= 0;
+const BAD_SIDE 		= 1;
+
+class GameSession {
+
+	// Example
+	// protected $gameSession = [
+	// 	'players' => [
+	// 		'123123asdasd788' => [
+	// 			'id' => '123123asdasd788',
+	// 			'playerName' => 'Hieu',
+	// 			'role' => [
+	// 				'name' => 'Forensic Scientist',
+	// 				'codename' => 'FS',
+	// 			],
+	// 			'isVoteable' => true,
+	// 			'weaponCards' => [
+	// 				0 => [
+	// 					'name' => 'shit',
+	// 					'imageUrl' => 'shit.jpg'
+	// 				]
+	// 			],
+	// 			evidenceCards' => [
+	// 				0 => [
+	// 					'name' 		=> '...',
+	// 					'imageUrl'	=> 'haha.jpg'
+	// 				]
+	// 			]
+	// 		],
+	// 		'123123asdasd789' => [
+	// 			'id' => '123123asdasd789',
+	// 			'role' => [
+	// 				'name' => 'Murderer',
+	// 				'codename' => 'M',
+	// 			],
+	// 			'isVoteable' => true,
+	// 		],
+	// 	],
+	// 	'currentPhase' 	=> 'Phase1-MurderPick',
+	// 	'hintCards' 		=> [
+	// 		'deathLocation' => [],
+	// 		'causeOfDeath'	=> [],
+	// 		'others'		=> [],
+	// 	],
+	// 	'win_side' => null,
+	// ];
+
+	protected $gameSession = array();
+
+	function __construct($playerList){
+		$this->gameSession['players'] = $this->generatePlayersData($playerList);
+	}
+
+	private function generatePlayersData($playerList){
+		$playerData = array();
+
+		$roles = ROLES;
+
+		foreach ($playerList as $key => $player) {
+			// Player Roles
+			shuffle($roles);
+	    	$role = $roles[0];
+
+			$playerData[$player['clientId']] = [
+				'fd' 			=> $player['fd'],
+				'role' 			=> $role,
+				'is_votable' 	=> true,
+			];
+		}
+
+		return $playerData;
+	}
+
+	private function generateHintCards(){
+		$hintCards = array();
+	}
+
+	public function getGameSession(){
+		return $this->gameSession;
+	}
+
+
+}

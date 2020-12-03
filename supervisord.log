@@ -1,0 +1,47 @@
+2018-06-02 11:10:23,884 CRIT Supervisor running as root (no user in config file)
+2018-06-02 11:10:23,891 INFO RPC interface 'supervisor' initialized
+2018-06-02 11:10:23,892 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-06-02 11:10:23,893 INFO daemonizing the supervisord process
+2018-06-02 11:10:23,893 INFO supervisord started with pid 8044
+2018-06-02 11:10:24,896 INFO spawned: 'DeceptionServer' with pid 8045
+2018-06-02 11:10:25,897 INFO success: DeceptionServer entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-06-03 09:31:51,691 WARN received SIGTERM indicating exit request
+2018-06-03 09:31:51,691 INFO waiting for DeceptionServer to die
+2018-06-03 09:31:51,696 INFO stopped: DeceptionServer (exit status 0)
+2018-06-03 12:10:03,792 CRIT Supervisor running as root (no user in config file)
+2018-06-03 12:10:03,799 INFO RPC interface 'supervisor' initialized
+2018-06-03 12:10:03,799 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-06-03 12:10:03,801 INFO daemonizing the supervisord process
+2018-06-03 12:10:03,801 INFO supervisord started with pid 14631
+2018-06-03 12:10:04,804 INFO spawned: 'DeceptionServer' with pid 14632
+2018-06-03 12:10:05,805 INFO success: DeceptionServer entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-06-06 09:19:06,684 WARN received SIGTERM indicating exit request
+2018-06-06 09:19:06,684 INFO waiting for DeceptionServer to die
+2018-06-06 09:19:06,693 INFO stopped: DeceptionServer (exit status 0)
+2018-06-06 19:35:10,846 CRIT Supervisor running as root (no user in config file)
+2018-06-06 19:35:10,854 INFO RPC interface 'supervisor' initialized
+2018-06-06 19:35:10,854 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-06-06 19:35:10,856 INFO daemonizing the supervisord process
+2018-06-06 19:35:10,856 INFO supervisord started with pid 32025
+2018-06-06 19:35:11,858 INFO spawned: 'DeceptionServer' with pid 32026
+2018-06-06 19:35:12,860 INFO success: DeceptionServer entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-06-27 19:31:46,331 WARN received SIGTERM indicating exit request
+2018-06-27 19:31:46,340 INFO waiting for DeceptionServer to die
+2018-06-27 19:31:46,341 INFO stopped: DeceptionServer (exit status 0)
+2018-06-27 19:31:46,341 WARN received SIGHUP indicating restart request
+2018-06-27 19:31:46,348 CRIT Supervisor running as root (no user in config file)
+2018-06-27 19:31:46,350 INFO RPC interface 'supervisor' initialized
+2018-06-27 19:31:46,350 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-06-27 19:31:46,350 INFO supervisord started with pid 32025
+2018-06-27 19:31:47,352 INFO spawned: 'DeceptionServer' with pid 32066
+2018-06-27 19:31:48,354 INFO success: DeceptionServer entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-15 08:56:05,836 CRIT Supervisor running as root (no user in config file)
+2018-08-15 08:56:05,843 INFO RPC interface 'supervisor' initialized
+2018-08-15 08:56:05,843 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-08-15 08:56:05,845 INFO daemonizing the supervisord process
+2018-08-15 08:56:05,845 INFO supervisord started with pid 22822
+2018-08-15 08:56:06,848 INFO spawned: 'DeceptionServer' with pid 22823
+2018-08-15 08:56:07,849 INFO success: DeceptionServer entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-16 07:02:26,647 WARN received SIGTERM indicating exit request
+2018-08-16 07:02:26,648 INFO waiting for DeceptionServer to die
+2018-08-16 07:02:26,653 INFO stopped: DeceptionServer (exit status 0)
