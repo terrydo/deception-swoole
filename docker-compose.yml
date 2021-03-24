@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  deception-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 9502:9502
+    volumes:
+      - .:/var/www
